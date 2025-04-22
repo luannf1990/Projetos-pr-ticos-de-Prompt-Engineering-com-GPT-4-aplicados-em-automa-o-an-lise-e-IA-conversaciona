@@ -1,32 +1,73 @@
-# 🧾 Exemplo: Validação de Boletim com OCR + Regras de Negócio
 
-Este exemplo mostra como usar **OCR (Reconhecimento Óptico de Caracteres)** com **Python + Tesseract** para extrair informações de uma imagem de boletim de apostas e validar se os dados extraídos estão corretos.
+# 🧾 Exemplo: Validação de Boletim com OCR + Python
 
----
-
-## 🔍 O que o script faz?
-
-1. **Lê uma imagem (`boletim_exemplo.png`)** usando OCR.
-2. **Extrai o texto bruto** da imagem.
-3. **Compara os dados extraídos** com os valores esperados:
-   - Nome da plataforma (ex: `"Bet365"`)
-   - Nome do evento (ex: `"Union Española vs. Fluminense"`)
-   - Valor apostado (ex: `"37.21"`)
-4. Informa se os dados estão corretos ou se há erros.
+Este script demonstra como usar OCR para extrair dados de uma imagem de boletim de aposta e validar as informações visualmente.
 
 ---
 
-## 🧠 Tecnologias usadas
+## 🔍 O que o script faz
 
-- Python 3.x
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
-- Pillow (PIL) para manipulação de imagens
+- Lê a imagem `boletim_exemplo.png`
+- Extrai o texto com Tesseract OCR
+- Compara os dados extraídos com:
+  - Plataforma: **Bet365**
+  - Evento: **Union Española vs. Fluminense**
+  - Valor: **R$ 37,21**
+- Exibe o resultado da validação
 
 ---
 
-## ▶️ Como executar
+## ✅ Resultado da Execução (Exemplo real)
 
-1. Instale as dependências:
+```
+🧾 Texto extraído da imagem:
+
+Bet365  
+Union Española vs. Fluminense  
+R$ 37.21
+
+🔍 Iniciando validação simples dos dados extraídos...
+✅ Validação concluída com sucesso. Todos os dados estão corretos.
+```
+
+---
+
+## 🧠 Requisitos (para testar localmente)
+
+- Python 3.x instalado
+- Biblioteca `pytesseract`
+- Biblioteca `Pillow`
+- Tesseract OCR instalado no seu sistema  
+  👉 Windows: https://github.com/UB-Mannheim/tesseract/wiki
+
+---
+
+## ▶️ Como executar (opcional)
+
+Se quiser rodar este exemplo localmente:
 
 ```bash
 pip install pytesseract pillow
+```
+
+Execute:
+
+```bash
+python ocr_validador.py
+```
+
+---
+
+## 🗂 Estrutura da pasta
+
+```
+📁 exemplo-ocr-validacao
+├── ocr_validador.py
+├── boletim_exemplo.png
+└── README.md
+```
+
+---
+
+Autor: [Luan Nascimento Faria](https://www.linkedin.com/in/luan-nascimento-faria-81370497/)
+📧 equipeeletrofusion@gmail.com
