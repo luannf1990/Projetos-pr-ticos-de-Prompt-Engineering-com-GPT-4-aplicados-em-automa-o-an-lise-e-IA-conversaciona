@@ -48,6 +48,22 @@ Projetos práticos usando IA generativa para resolver desafios reais nas áreas 
 
 ---
 
+## 🧩 Como usar
+
+Você pode explorar os exemplos a partir das pastas:
+
+- `exemplo-atendimento`: mostra como gerar um atendimento automatizado via prompt.
+- `exemplo-validador-visual`: compara imagens de boletins e valida se são compatíveis.
+- `exemplo-gerador-procedimento`: transforma prints em procedimentos estruturados com IA.
+
+### ▶️ Para testar os prompts:
+
+1. Abra o arquivo README ou imagem de cada exemplo.
+2. Copie o prompt descrito e cole no ChatGPT ou outra IA compatível com GPT-4.
+3. Adapte o conteúdo com seus próprios dados e contexto se quiser personalizar.
+
+📌 Se quiser automatizar o processo, use n8n + API da OpenAI + OCR para aplicar isso de forma produtiva.
+
 ## 📞 Contato
 
 📧 equipeeletrofusion@gmail.com  
